@@ -52,18 +52,6 @@ public class Demo {
 		if (machine.isFull()) System.out.println("Machine is FULL.");
 	}
 	
-	/**
-	 * Run a console demo.
-	 * @param args not used
-	 */
-	public static void main(String[] args) {
-		final int capacity = 10;  // how many coins the machine can hold
-		
-		CoinMachine machine = new CoinMachine( capacity );
-		Demo demo = new Demo();
-		//TODO add observers
-		demo.insertDialog(machine);
-	}
 }
 
 
