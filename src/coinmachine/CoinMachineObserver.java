@@ -22,7 +22,6 @@ public class CoinMachineObserver extends JFrame implements Observer{
 	private JProgressBar progressBar;
 	private JLabel balanceAmount;
 	private CoinMachine machine;
-	private Scanner console;
 	
 	/**
 	 * Update text and value in UI.
@@ -46,9 +45,8 @@ public class CoinMachineObserver extends JFrame implements Observer{
 	 * set Title and called initComponent. 
 	 * @param cmc Observer CoinMachine.
 	 */
-	public CoinMachineObserver(CoinMachine cmc , Scanner cs){
+	public CoinMachineObserver(CoinMachine cmc){
 		super("Coin Machine");
-		this.console = cs;
 		this.machine = cmc;
 		initComponent();
 	}

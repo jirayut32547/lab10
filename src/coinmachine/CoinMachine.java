@@ -18,6 +18,7 @@ public class CoinMachine extends Observable{
 	
 	/** 
 	 * Create a new coin machine with a fixed capacity.
+	 * @param capacity Is capacity of Coin Machine
 	 */
 	public CoinMachine( int capacity ) {
 		this.capacity = capacity;

@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class CoinMachineApp {
 	public static void main (String[] args){
 		Scanner console = new Scanner( System.in );
-		System.out.print("Input size of machine : ");
+		System.out.print("Input capacity of machine : ");
 		int capacity = console.nextInt();
 		
 		CoinMachine machine = new CoinMachine( capacity );
@@ -19,7 +19,7 @@ public class CoinMachineApp {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					CoinMachineObserver coinMachine = new CoinMachineObserver(machine , console); 
+					CoinMachineObserver coinMachine = new CoinMachineObserver(machine); 
 					AmountOfCoinObserverUI amountOfCoin = new AmountOfCoinObserverUI(machine);
 					machine.addObserver(amountOfCoin);
 					machine.addObserver(coinMachine);

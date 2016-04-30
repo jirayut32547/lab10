@@ -11,7 +11,9 @@ public class Demo {
 	private static Scanner console = new Scanner( System.in );
 	
 	
-	/** run the user interface */
+	/** run the user interface 
+	 * @param machine Is Observable
+	 * */
 	public void insertDialog(CoinMachine machine) {
 		System.out.println("Coin Machine has a capacity of "+ machine.getCapacity());
 		System.out.print("Input the value of coins to insert (separated by space). ");
